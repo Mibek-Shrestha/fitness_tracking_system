@@ -10,8 +10,8 @@
     
     <!-- Navigation bar -->
    <?php  include 'Navbar/header.php'; ?>
-
-
+    <!-- <?php include 'detailCard.php'?> -->
+    <?php include 'card.php'?>
     
 </body>
 
