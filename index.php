@@ -8,9 +8,12 @@
 
 <body>
     
+    
     <!-- Navigation bar -->
    <?php  include 'Navbar/header.php'; ?>
-    <!-- <?php include 'detailCard.php'?> -->
+   <img src="images\class-4.jpg" alt="" width='99%'  srcset="">
+    <?php include 'searchBar.php'?>
+    
     <?php include 'card.php'?>
     
 </body>

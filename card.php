@@ -22,6 +22,7 @@
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             // Retrieve and display the GIF image
+            $id = $row['id'];
             $title = $row['title'];
             $description = $row['description'];
             $gifContent = $row['gif_content'];
@@ -36,7 +37,17 @@
                   <?php echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '"><br><br>';?>
                   <div class="card-body">
                   <h5 class="card-title"><?php echo $title?></h5>
-                 <a href="#" class="btn btn-primary">Go somewhere</a>
+                 <!-- <a href="detailCard.php?detailCard='.<?php $id ?>.'" class="btn btn-primary">view More</a> -->
+                 <?php 
+                  if ($id === -1) {
+                        echo "Title not found.";
+                    } else {
+                        // $title = $result[$index]['title'];
+                        echo  '<button class="btn btn-danger"><a href="detail.php?updateid='.$id  .'"
+                        class="text-light">Detail information</a></button>';
+                    }
+
+                 ?>
              </div>
             </div>
             </div>

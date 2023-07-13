@@ -1,64 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Half Screen Layout</title>
-    <link rel="stylesheet" type="text/css" href="style/detailCard.css">
-</head>
-<body>
-  <div class="container">
+
+
+
       <?php
     // Database connection details
+    $id = $_GET['updateid'];
     include 'AdminPanel/db.php';
 
     // Retrieve GIF image from the database
-    $sql = "SELECT * FROM exercise where id = 1";
-    $result = $conn->query($sql);
+  $sql = "SELECT * FROM exercise where id = $id";
+ 
 
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            // Retrieve and display the GIF image
-            $title = $row['title'];
-            $description = $row['description'];
-            $gifContent = $row['gif_content'];
-            // echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '"><br><br>';
-            // echo $title;
-            // echo "<br>";
-            // echo $description;
+$result = mysqli_query($conn, $sql);
 
-            ?>
-            <div class="image">
-         <?php echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '"><br><br>';?>
-    </div>
-    <div class="content">
-      <h1 class="title"><?php  echo $title?></h1>
-      <p class="information"><?php  echo $description?></p>
+// Check if the query executed successfully
+if ($result) {
+    // Fetch the row as an associative array
+    $row = mysqli_fetch_assoc($result);
 
+    // Use the data as needed
+    if ($row) {
+        echo "Card ID: " . $row['title'];
 
-<?php
-            
-        }
+        // ...
     } else {
-        echo "No GIF images found in the database.";
+        echo "No card found";
     }
 
-    // Close the database connection
-    $conn->close();
-    ?>
-    
-      <div class="part">
-         <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
-      </div>
-        <div class="part">
-         <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
-      </div>
-        <div class="part">
-         <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
-      </div>
-      
-    </div>
-  </div>
-</body>
-</html>
+    // Free the result set
+    mysqli_free_result($result);
+} else {
+    echo "Error executing query: " . mysqli_error($conn);
+}
+
+// Close the connection
+mysqli_close($conn);
+?>
