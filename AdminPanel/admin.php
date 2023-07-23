@@ -28,9 +28,9 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="./exerciseUpload.php">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
+					<span class="text">Add Exercise</span>
 				</a>
 			</li>
 			<li>
@@ -140,7 +140,7 @@
 					</span>
 				</li>
 			</ul>
-				<?php include 'displayExercise.php'; ?>
+				<?php include 'exerciseDisplay.php'; ?>
 
 		</main>
 		<!-- MAIN -->

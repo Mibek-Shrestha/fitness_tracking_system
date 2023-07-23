@@ -23,6 +23,7 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
+  position: static;
 }
 
 .nav-links li {

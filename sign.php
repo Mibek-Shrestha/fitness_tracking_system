@@ -6,11 +6,11 @@
 </head>
 <body>
     <?php  include 'Navbar/header.php'; ?>
-  <div class="container">
-    <form class="login-form">
+  <div class="container" >
+    <form class="login-form" action="signIn_Process.php" method="post">
       <h1>Login</h1>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+      <input type="text" name="username" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
       <button type="submit">Login</button>
     </form>
   </div>

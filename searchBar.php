@@ -1,16 +1,14 @@
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Title Search</title>
-</head>
-<body>
-    <form method="POST" action="">
-        <label for="title">Title:</label>
-        <input type="text" name="title" id="title">
-        <input type="submit" name="search" value="Search">
+<div class="container">
+<form method="POST" action="">
+        <h1 style="text-align:center">Search Exercise</h1>
+        
+        <input type="text" name="title" id="title" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+        <input type="submit" name="search" value="Search" style="background-color: #008080; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
     </form>
+</div>
+    
     <?php
 // Linear search function
 function linearSearch($arr, $x)
@@ -72,5 +70,4 @@ if (isset($_POST['search']) && isset($_POST['title'])) {
     }
 }
 ?>
-</body>
-</html>
+

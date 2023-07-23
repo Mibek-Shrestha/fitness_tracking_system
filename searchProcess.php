@@ -31,7 +31,7 @@ if (isset($_POST['search']) && isset($_POST['title'])) {
     $searchTerm = $_POST['title'];
 
     // Prepare and execute the query to fetch information from the database
-    $stmt = $pdo->prepare("SELECT `title`FROM exercise");
+    $stmt = $pdo->prepare("SELECT * FROM exercise");
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -42,6 +42,9 @@ if (isset($_POST['search']) && isset($_POST['title'])) {
         echo "Title not found.";
     } else {
         $title = $result[$index]['title'];
+            $gifContent = $result[$index]['gif_content'];
+            //
+         echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '"><br><br>';
            echo "<h1>$title</h1>";
         echo  '<button class="btn btn-danger"><a href="detail.php?updateid='.$index + 1 .'"
           class="text-light">View in Detail</a></button>';

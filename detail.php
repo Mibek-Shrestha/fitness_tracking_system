@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style/detailCard.css">
 </head>
 <body>
+  <?php  include 'Navbar/header.php'; ?>
   <div class="container">
       <?php
     // Database connection details
@@ -27,7 +28,7 @@
 
             ?>
             <div class="image">
-         <?php echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '"><br><br>';?>
+         <?php echo '<img src="data:image/gif;base64,' . base64_encode($gifContent) . '" width=500px ><br><br>';?>
     </div>
     <div class="content">
       <h1 class="title"><?php  echo $title?></h1>
@@ -47,15 +48,15 @@
     
       <div class="part">
          <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
+        <p class="text-message">waist</p>
       </div>
         <div class="part">
-         <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
+         <img src="assests/target.png" alt="Logo" class="logo">
+        <p class="text-message"> abs</p>
       </div>
         <div class="part">
-         <img src="assests/body-part.png" alt="Logo" class="logo">
-        <p class="text-message">Thank you for visiting!</p>
+         <img src="assests/equipment.png" alt="Logo" class="logo">
+        <p class="text-message">body weight</p>
       </div>
       
     </div>

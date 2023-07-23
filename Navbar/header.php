@@ -13,7 +13,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
-            <li><a href="#exercise">Exercise</a></li>
+            <li><a href="allCard.php">Exercise</a></li>
             <li><a href="sign.php">Sign In</a></li>
             <li><a href="signUp.php">Sign Up</a></li>
         </ul>
