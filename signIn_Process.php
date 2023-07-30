@@ -17,7 +17,7 @@
         }else if($row["username"] == $username && $row["password"] == $password){
             $_SESSION["username"] = $username;
           
-            header("location:collect/form1.php");
+            header("location:UserView.php");
         }
         else{
             header("location:sign.php?Error=invalid username or password");

@@ -52,6 +52,15 @@
             font-size: 24px;
             
         }
+        button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -69,7 +78,7 @@
         <input type="radio" name="field_form1" value="keep_fit" id="keep_fit">
         <label for="keep_fit"> Keep Fit </label><br>
         </div>
-       <<button type="submit" name="form1_submit">Next</button>
+       <button type="submit" name="form1_submit">Next</button>
        
     </form>
 </body>

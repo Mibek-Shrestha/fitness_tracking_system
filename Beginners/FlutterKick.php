@@ -1,3 +1,4 @@
+<?php include '../login_header.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +35,7 @@
   <div class="container">
   <div class="row">
     <div class="col-9">
-      <h1>HOW TO FLUTTER KICK</h1>
+      <h1>HOW TO DO FLUTTER KICK</h1>
     </div>
     <div class="col-7">
       <img src="gifimagE/Bear Crawl.gif" height=500px alt="">

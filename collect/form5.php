@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,10 +38,10 @@ button {
 </head>
 <body>
     <div class="center">
-        <h2>Enter Your Age:</h2>
-        <form  action="process_forms.php"method="post">
-            <input type="number" name="age" required>
-            <button type="submit" name="Submit_age">Submit</button>
+        <h2>Enter Your weight</h2>
+        <form action="process_forms.php" method="post">
+            <input type="number" name="weight" required>
+            <button type="submit" name="for_weight" >Submit</button>
         </form>
     </div>
 </body>

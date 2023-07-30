@@ -37,7 +37,7 @@
                     } else {
                         // $title = $result[$index]['title'];
                         echo  '<button class="btn btn-danger"><a href="detail.php?updateid='.$id  .'"
-                        class="text-light">Detail information</a></button>';
+                        class="text-light" style="text-decoration:none;">Detail information</a></button>';
                     }
 
                  ?>

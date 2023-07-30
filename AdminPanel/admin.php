@@ -45,12 +45,7 @@
 					<span class="text">Message</span>
 				</a>
 			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
-				</a>
-			</li>
+			
 		</ul>
 		<ul class="side-menu">
 			<li>
@@ -60,7 +55,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="logout">
+				<a href="../index.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
@@ -84,14 +79,13 @@
 					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
 				</div>
 			</form>
-			<input type="checkbox" id="switch-mode" hidden>
-			<label for="switch-mode" class="switch-mode"></label>
+	
 			<a href="#" class="notification">
 				<i class='bx bxs-bell' ></i>
-				<span class="num">8</span>
+				<span class="num">2</span>
 			</a>
 			<a href="#" class="profile">
-				<img src="img/people.png">
+				<img src="class-icon-2.png">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -111,32 +105,29 @@
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Download PDF</span>
-				</a>
+			
 			</div>
 
 			<ul class="box-info">
-				<li>
+				<!-- <li>
 					<i class='bx bxs-calendar-check' ></i>
 					<span class="text">
 						<h3>1020</h3>
 						<p>New Order</p>
 					</span>
-				</li>
+				</li> -->
 				<li>
 					<i class='bx bxs-group' ></i>
 					<span class="text">
-						<h3>2834</h3>
-						<p>Visitors</p>
+						<h3>2</h3>
+						<p>Users</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
 					<span class="text">
-						<h3>$2543</h3>
-						<p>Total Sales</p>
+						<h3>10</h3>
+						<p>Exercises</p>
 					</span>
 				</li>
 			</ul>

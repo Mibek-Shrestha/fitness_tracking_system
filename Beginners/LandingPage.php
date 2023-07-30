@@ -1,3 +1,4 @@
+<?php include '../login_header.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
                 /* margin-top: 200px; */
                 height: 100px;
                 width: 100%;
-                background-color: black;
+                background-color: grey;
                 color:white;
             }
             .exercises_list {

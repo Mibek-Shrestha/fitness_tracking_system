@@ -1,15 +1,14 @@
 
-
 <div class="container">
-<form method="POST" action="">
-        <h1 style="text-align:center">Search Exercise</h1>
-        
-        <input type="text" name="title" id="title" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-        <input type="submit" name="search" value="Search" style="background-color: #008080; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-    </form>
+        <form method="POST" >
+                <h1 style="text-align:center">Search Exercise</h1>
+                
+                <input type="text" name="title" id="title" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                <input type="submit" name="search" value="Search" style="background-color: #008080; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            </form>
 </div>
-    
-    <?php
+    <div class="container">
+<?php
 // Linear search function
 function linearSearch($arr, $x)
 {
@@ -53,10 +52,12 @@ if (isset($_POST['search']) && isset($_POST['title'])) {
         echo "Title not found.";
     } else {
         $title = $result[$index]['title'];
+        // $photo_url = $result[$index]['gif_content'];
+        // echo "<img src='$photo_url' alt='$exercise_name'>";
            echo "<h1>Searched Exercise</h1>";
            echo "<h3>$title</h3>";
-        echo  '<button class="btn btn-danger"><a href="detail.php?updateid='.$index + 1 .'"
-          class="text-light">View in Detail</a></button>';
+        echo  '<button class="btn btn-danger"><a href="detail.php?updateid='.$index + 8 .'"
+          class="text-light" style="text-decoration:none">View in Detail</a></button>';
 
         ?>
         <!-- <a href="Detail.php?detailid<?php $index +1  ?>">View More</a> -->
@@ -71,3 +72,6 @@ if (isset($_POST['search']) && isset($_POST['title'])) {
 }
 ?>
 
+
+    </div>
+    
