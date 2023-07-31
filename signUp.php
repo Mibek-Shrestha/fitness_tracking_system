@@ -7,7 +7,8 @@
 <body>
     <?php  include 'Navbar/header.php'; ?>
   <div class="container">
-    <form class="signup-form" action="signUp_process.php" method="POST">
+    <form class="signup-form" action="./Users/signUp_process.php" method="POST">
+      
       <h1>Sign Up</h1>
       <input type="text" name='username' placeholder="Username" required>
       <input type="email" name='email' placeholder="Email" required>
